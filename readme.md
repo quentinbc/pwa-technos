@@ -6,7 +6,7 @@ _Projet additionnel à "cours-pwa-pratique" afin de gérer les données en CRUD 
 **Ci-dessous l'explicatif vous permettant de réaliser le résultat de ce projet**
 
 
-## 1. Création d'un projet Firebase
+## 1. Création d'un projet Firebase 🔥
 * Créez un compte firebase et votre projet "pwa-technos" : https://firebase.google.com/
 * Ajoutez votre nom si besoin à la suite "pwa-technos-nom"
 * Désactivez Analytics pour le moment nous n'en avons pas besoin.
@@ -61,9 +61,10 @@ _Pour déployer uniquement une fonction ``firebase deploy --only functions:nomFu
 * Installez sur votre ordinateur "Postman", créez une collection, ajoutez votre première requête (récupérée vos url dans Firebase / Functions)
 
 
-### 4.1 Ajouter un item : https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno
-Testez en GET et vous obtiendrez le résultat : {"message":"Not allowed"}
-Testez en POST avec les datas suivantes : dans Body : raw : JSON (application/json)
+### 4.1 Ajouter un item
+Créer votre requête POSTMAN avec en url : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno_
+* Testez en **GET** et vous obtiendrez le résultat : ``{"message":"Not allowed"}``
+* Testez en **POST** avec les datas suivantes à ajouter dans **Body / raw / JSON (application/json)** de votre requête POSTMAN
 ```
 {
 "id":"keyid1",
@@ -74,15 +75,18 @@ Testez en POST avec les datas suivantes : dans Body : raw : JSON (application/js
 }
 ```
 > ajouter 3 items en changeant le num à chaque fois
+Vérifiez dans votre Firebase / Database que vous obtenez bien votre collection d'objets.
 
 
-### 4.2 Récupérer la liste des items : GET > https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/getTechnos
-> récupération des 3 items
+### 4.2 Récupérer la liste des items
+Créer votre nouvelle requête POSTMAN avec un appel **GET** et l'url : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/getTechnos_
+> Vous devriez récupérer les 3 items
 
 
-### 4.3 Supprimer un item de la liste : DELETE > https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/deleteTechno
-Avec dans Params "id" : "keyid2"
-> Suppression de l'item 2
+### 4.3 Supprimer un item
+Créer votre nouvelle requête POSTMAN avec un appel **DELETE** et l'url : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/deleteTechno_
+Ajoutez les données suivantes dans **Params** ``"id" : "keyid2"``
+> Vous devriez obtenir la liste des items sans l'item n°2
 
 
-_Bravo votre service tiers de Firebase Function fonctionne maintenant correctement_
+_Bravo 👏 votre service tiers de Firebase Function fonctionne correctement_
