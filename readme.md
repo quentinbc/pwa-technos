@@ -1,9 +1,9 @@
 # pwa-technos
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)][![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)]
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg) ![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
 
-_Projet additionnel à "cours-pwa-pratique" afin de gérer les données en CRUD de l'application PWA avec Firebase Functions.
+_Projet additionnel à "cours-pwa-pratique" afin de gérer les données en CRUD de l'application PWA avec Firebase Functions_
 
-Ci-dessous l'explicatif vous permettant de réaliser le résultat de ce projet.
+**Ci-dessous l'explicatif vous permettant de réaliser le résultat de ce projet**
 
 
 ## 1. Création d'un projet Firebase
@@ -24,7 +24,7 @@ firebase login
 firebase init functions
 ```
 
-Questions : réponses pour ``firebase login``
+Questions : réponses pour ``firebase init functions``
 
 - Select project : existing project (pwa-technos)
 - Select a default Firebase project for this directory : pwa-technos
@@ -36,9 +36,13 @@ Questions : réponses pour ``firebase login``
 ## 3. Installez et déployer les endpoints
 Entrez dans le dossier ``cd functions``
 
+
 ### 3.1 Cors : Cross-Origin Resource Sharing
 Installez ``cors``qui permet à un client d'accèder à votre serveur malgrè le fait qu'il ne soit pas sur le même domaine (protocole, port ou domaine différent)
-```npm i -S cors```
+```
+npm i -S cors
+```
+
 
 ### 3.2 Copiez collez le fichier index.js
 Récupérez le fichier dans ``_functions/index.js``
@@ -48,13 +52,14 @@ Récupérez le fichier dans ``_functions/index.js``
 ```
 firebase deploy
 ```
-_Pour déployer uniquement une fonction ``firebase deploy --only functions:nomFunction``
+_Pour déployer uniquement une fonction ``firebase deploy --only functions:nomFunction``_
 
 
 
 ## 4. Testez vos api
 * Visualisez vos function dans Firebase / Développer / Functions. 
 * Installez sur votre ordinateur "Postman", créez une collection, ajoutez votre première requête (récupérée vos url dans Firebase / Functions)
+
 
 ### 4.1 Ajouter un item : https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno
 Testez en GET et vous obtiendrez le résultat : {"message":"Not allowed"}
@@ -80,4 +85,4 @@ Avec dans Params "id" : "keyid2"
 > Suppression de l'item 2
 
 
-_Bravo votre service tiers de Firebase Function fonctionne maintenant correctement.
+_Bravo votre service tiers de Firebase Function fonctionne maintenant correctement_
