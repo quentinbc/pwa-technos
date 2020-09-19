@@ -67,3 +67,16 @@ exports.deleteTechno = functions.https.onRequest((req, res) => {
     getTechnosFromDatabase(res)
   })
 })
+
+exports.deleteTechnoP = functions.https.onRequest((req, res) => {
+  return cors(req, res, () => {
+    if(req.method !== 'POST') {
+      return res.status(500).json({
+        message: 'Not allowed'
+      })
+    }
+		const techno = req.body;
+		refTechnos.child(techno.id).remove()
+    getTechnosFromDatabase(res)
+  })
+})
