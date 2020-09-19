@@ -88,8 +88,7 @@ Créer votre requête POSTWOMAN avec en url (utiliser votre url d'api) : _https:
 "url" : "Url Techno 1"
 }
 ```
-> ajouter 3 items en changeant le num à chaque fois
-Attention changez bien le nom de l'id autrement cela aura uniquement une fonction d'update de celui indiqué
+> ajouter 3 items différents en changeant bien l'id à chaque fois
 Vérifiez dans votre Firebase / Database que vous obtenez bien votre collection d'objets.
 
 
