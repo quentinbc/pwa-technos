@@ -15,7 +15,7 @@ _Projet additionnel à "cours-pwa-pratique" afin de gérer les données en CRUD 
 
 
 ## 2. Création du projet en local
-Avec le terminal créez un nouveau dossier "pwa-technos" et entrez dedans puis suivez les instructions
+Avec le terminal créez un dossier "pwa-technos" en dehors de tout projet en cours, entrez dedans puis suivez les instructions
 ```
 mkdir pwa-technos
 cd pwa-technos
