@@ -26,7 +26,7 @@ firebase init functions
 
 Questions : réponses pour ``firebase init functions``
 
-- Select project : existing project (pwa-technos)
+- Select project : existing project (pwa-technos) (si erreur faites : 'firebase login --reauth' )
 - Select a default Firebase project for this directory : pwa-technos
 - What language would you like to use to write Cloud Functions? : Javascript
 - Do you want to use ESLint to catch probable bugs and enforce style? : n
