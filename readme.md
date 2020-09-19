@@ -79,7 +79,7 @@ Crédit GCP 300$ : https://cloud.google.com/free/docs/gcp-free-tier#free-trial
 ### 4.1 Ajouter un item
 Créer votre requête POSTWOMAN avec en url (utiliser votre url d'api) : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno_
 * Tester en **GET** et vous obtiendrez le résultat : ``{"message":"Not allowed"}``
-* Tester en **POST** avec les datas suivantes à ajouter dans **Body / raw / JSON (application/json)** de votre requête POSTMAN
+* Tester en **POST** avec les datas suivantes à ajouter dans **Body / raw / JSON (application/json)** de votre requête
 ```
 {
 "id":"keyid1",
@@ -89,6 +89,7 @@ Créer votre requête POSTWOMAN avec en url (utiliser votre url d'api) : _https:
 }
 ```
 > ajouter 3 items en changeant le num à chaque fois
+Attention changez bien le nom de l'id autrement cela aura uniquement une fonction d'update de celui indiqué
 Vérifiez dans votre Firebase / Database que vous obtenez bien votre collection d'objets.
 
 
