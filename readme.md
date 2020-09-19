@@ -99,18 +99,9 @@ Créez votre nouvelle requête avec un appel **GET** et l'url : _https://us-cent
 
 ### 4.3 Supprimer un item
 Créez votre nouvelle requête avec un appel **DELETE** et l'url : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/deleteTechno_
-Ajoutez les données suivantes dans **Params** ``"id" : "keyid2"``
+Ajoutez les données suivantes dans **Parameters** Liste des paramètres ``"id" : "keyid2"``
 > Vous devriez obtenir la liste des items sans l'item n°2
-#### 4.3 bis Supprimer un item en POST
-Il est possible que la requête en **DELETE** sorte en erreur, dans ce cas utilisez ci dessous en **POST**
-Créez votre nouvelle requête avec un appel **POST** et l'url : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/deleteTechnoP_
-Ajoutez les données suivantes dans **Body / raw / JSON (application/json)** de votre requête
-```
-{
-"id":"keyid2"
-}
-```
-> Vous devriez obtenir la liste des items sans l'item n°2
+
 
 
 _Bravo 👏 votre service tiers de Firebase Function fonctionne correctement_
