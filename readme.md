@@ -56,6 +56,19 @@ firebase deploy
 ```
 _Pour déployer uniquement une fonction ``firebase deploy --only functions:nomFunction``_
 
+#### 3.3bis Compte de facturation
+Depuis le 17 août 2020 il est nécessaire d'avoir un compte de facturation mais vous avez normalement accès à un crédit de 300$ gratuit pour toute création de compte.
+Explication : https://firebase.google.com/support/faq#expandable-10
+Crédit GCP 300$ : https://cloud.google.com/free/docs/gcp-free-tier#free-trial
+
+- Allez dans l'icône des paramètres en haut du menu de gauche / Utilisation et facturation
+- Sélectionnez "Détails et paramètres"
+- Cliquez sur "Changer de formule"
+- Sélectionnez "Blaze"
+- Remplissez les informations de facturation pour activer la facturation vous pouvez entrer une carte de crédit ou un compte bancaire.
+- Dans la facturation de "Blaze" choisissez "Acheter"
+- Ne vous inquiétez pas le coût est modique (pas même un euro voir 0€) et vous pouvez bénéficier des 300$ de crédits pour tester les outils de Google
+- Une fois validé recommencez le déploiement
 
 
 ## 4. Testez vos api
