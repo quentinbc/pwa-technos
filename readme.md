@@ -73,7 +73,7 @@ Crédit GCP 300$ : https://cloud.google.com/free/docs/gcp-free-tier#free-trial
 
 ## 4. Testez vos api
 * Pour récupérer les url d'api visualisez vos function dans "Firebase / Développer / Functions" 
-* Utilisez POSTWOMAN pour vos tests d'api : https://postwoman.io/
+* Utilisez HOPPSCOTCH pour vos tests d'api : https://hoppscotch.io/fr
 
 
 ### 4.1 Ajouter un item
