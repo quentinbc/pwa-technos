@@ -77,7 +77,7 @@ Crédit GCP 300$ : https://cloud.google.com/free/docs/gcp-free-tier#free-trial
 
 
 ### 4.1 Ajouter un item
-Créer votre requête POSTWOMAN avec en url (utiliser votre url d'api) : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno_
+Créer votre requête avec en url (utiliser votre url d'api) : _https://us-central1-xxxxxxxxxxxxxxxxxxxx.cloudfunctions.net/addTechno_
 * Tester en **GET** et vous obtiendrez le résultat : ``{"message":"Not allowed"}``
 * Tester en **POST** avec les datas suivantes à ajouter dans **Body / raw / JSON (application/json)** de votre requête
 ```
